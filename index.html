@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="contanair py-4">
+        <div class="w-75 mx-auto ali">
+            <h1 class="mb-4 text-center p-5 text-d">Bookmarker</h1>
+            <p class="mb-4 text-center ">Bookmark your favorite sites</p>
+            <div class="form-group mb-5">
+                <label for="SiteName" class="m-2">Site Name</label>
+                <input type="text" class="form-control " oninput="nameValidation()" placeholder="Bookmark Name" id="SiteName">
+                <div class="alert alert-danger d-none" id="error">
+                    <p >Site Name or Url is not valid, Please follow the rules below :</p>
+                    <li>Site name must contain at least 3 characters</li>
+                    <li>Site URL must be a valid one</li>
+                </div>
+                <label for="SiteUrl" class="m-2">Site URL</label>
+                <input type="text" class="form-control" oninput="citeValidation()" id="SiteUrl" placeholder="Website URL">
+                <div class="alert alert-danger d-none" id="error1">
+                    <p >Site Name or Url is not valid, Please follow the rules below :</p>
+                    <li>Site name must contain at least 3 characters</li>
+                    <li>Site URL must be a valid one</li>
+                </div>
+            </div>
+            <button class="btn btn-submit px-5" onclick="getinformation()">Submit</button>
+
+        </div>
+
+    </div>
+
+     <table class="table w-50 mx-auto py-4">
+        <thead >
+            <th>Index</th>
+            <th>Website Name</th>
+            <th>Visit</th>
+            <th>Delete</th>
+        </thead>
+        <tbody id="myBody">
+            
+                
+            
+        </tbody>
+     </table>
+
+
+
+
+    <script src="javascript.js"></script>
+
+</body>
+
+</html>

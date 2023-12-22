@@ -1,0 +1,35 @@
+/* ! START GLOBAL STYLES */
+@font-face {
+    font-family: "Pacifico";
+    src: url(../Pacifico-Regular.ttf);
+}
+.btn-submit {
+    width: 153px;
+    height: 35px;
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #d1512d;
+    --bs-btn-border-color: #d1512d;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #bb4120;
+    --bs-btn-hover-border-color: #a03315;
+    
+
+}
+
+ 
+
+h1 {
+    font-family:"Pacifico";
+    font-size: 50px;
+    font-weight: 500;
+    color: #352e28;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    color: black;
+}
+.name p{
+    display: none;
+}
